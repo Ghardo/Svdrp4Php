@@ -23,12 +23,23 @@ abstract class Command {
 	 */
 	protected $_command = null;
 
+	public function __construct($param = null) {
+		if ($param !== null)
+			$this->setParam($param);
+	}
+
 	/**
 	 *
 	 * Enter description here ...
 	 */
 	public function getCommand() {
 		$this->_prepareParam();
+
+		if ($this->_command === null) {
+			$class = explode('\\', get_class($this));
+			$class = array_splice($class, -1);
+			$this->_command = reset($class);
+		}
 
 		if ($this->getParam() !== null) {
 			return $this->_command . ' ' . $this->getParam();

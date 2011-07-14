@@ -148,7 +148,7 @@ class Svdrp {
 						$match);
 
 			var_dump($match);
-			if (!$succes) throw new Exceptions\UnknownResult();
+			if (!$success) throw new Exceptions\UnknownResult();
 
 			if (trim($match['test']) != '-') $finish = true;
 
@@ -175,6 +175,7 @@ class Svdrp {
 	 */
 	public function send($command) {
 		if(!$this->_socket) return false;
+		var_dump($command->getCommand());
 
 		fwrite($this->_socket, $command->getCommand() . "\n");
 		return $this->recieve();

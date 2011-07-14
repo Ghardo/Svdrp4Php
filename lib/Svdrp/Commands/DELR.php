@@ -10,13 +10,6 @@ namespace Svdrp\Commands;
 class DELR extends Command {
 
 	/**
-	 *
-	 * Enter description here ...
-	 * @var unknown_type
-	 */
-	protected $_command = 'DELR';
-
-	/**
 	 * TODO Type Hints
 	 * @param int $number
 	 */

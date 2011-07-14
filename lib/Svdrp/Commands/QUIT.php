@@ -8,13 +8,5 @@ namespace Svdrp\Commands;
  *
  */
 class QUIT extends Command {
-
-	/**
-	 *
-	 * Enter description here ...
-	 * @var unknown_type
-	 */
-	protected $_command = 'QUIT';
-
 	protected function _prepareParam() {}
 }
