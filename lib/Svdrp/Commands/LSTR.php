@@ -7,15 +7,14 @@ namespace Svdrp\Commands;
  * @author Ghardo
  *
  */
-class DELR extends Command {
+class LSTR extends Command {
 
 	/**
-	 * TODO Type Hints
-	 * @param int $number
+	 *
+	 * Enter description here ...
+	 * @var unknown_type
 	 */
-	public function __construct($number) {
-		$this->setParam($number);
-	}
+	protected $_command = 'LSTR';
 
 	protected function _prepareParam() {
 	}

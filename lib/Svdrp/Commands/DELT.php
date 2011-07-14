@@ -7,15 +7,15 @@ namespace Svdrp\Commands;
  * @author Ghardo
  *
  */
-class DELC extends Command {
+class DELT extends Command {
 
 	/**
 	 *
 	 * Enter description here ...
 	 * @param unknown_type $channel
 	 */
-	public function __construct($channel) {
-		$this->setParam($channel);
+	public function __construct($timer) {
+		$this->setParam($timer);
 	}
 
 	protected function _prepareParam() {

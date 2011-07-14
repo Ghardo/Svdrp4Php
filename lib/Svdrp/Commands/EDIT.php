@@ -7,6 +7,7 @@ namespace Svdrp\Commands;
  * @author Ghardo
  *
  */
-class CHAN extends Command {
-	protected function _prepareParam() {}
+class EDIT extends Command {
+	protected function _prepareParam() {
+	}
 }
